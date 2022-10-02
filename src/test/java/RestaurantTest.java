@@ -81,5 +81,10 @@ class RestaurantTest {
         int totalCost = restaurant.calculateCost("Sweet corn soup", "Vegetable lasagne");
         assertEquals(388, totalCost);
     }
+    @Test
+    public void calculate_cost_of_non_existing_items() {
+        int totalCost = restaurant.calculateCost("Veg Biryani", "Veg Sandwich");
+        assertEquals(0, totalCost);
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<ORDER COST<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 }
