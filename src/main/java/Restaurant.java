@@ -73,4 +73,9 @@ public class Restaurant {
         return name;
     }
 
+    public int calculateCost(String name1, String name2) {
+
+        return 0;
+    }
+
 }
